@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+/* UTILITIES */
+.center {
+  text-align: center;
+}
+
 /* CUSTOM STYLES FOR THE NAV */
 @media (min-width: 768px) {
   #navbarNav {
@@ -20,11 +25,42 @@
 /* CUSTOM STYLES FOR THE SECTION */
 #style-container {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: auto;
   background-color: blue;
-  height: 80vh;
+  height: 100vh;
+  gap: 10px;
+  padding: 10px;
+  margin-top: 60px;
 }
 .style-items {
   background-color: red;
-  width: 15%;
-  height: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.style-items img {
+  width: 80px;
+  height: 80px;
+}
+
+.small--div {
+  width: 50%;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+footer section {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 20px;
+}
+ul li {
+  list-style-type: none;
 }
