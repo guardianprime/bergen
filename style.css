@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato:wght@100;400;700&family=Montserrat&family=Open+Sans:wght@500&family=Poppins:ital,wght@1,300&family=Rajdhani:wght@300&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -7,6 +9,14 @@
 /* UTILITIES */
 .center {
   text-align: center;
+}
+
+.white {
+  color: white;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 /* CUSTOM STYLES FOR THE NAV */
@@ -22,19 +32,23 @@
   }
 }
 
+/* NAV CUSTOM STYLES */
+nav {
+  background-color: black;
+  color: white;
+}
+
 /* CUSTOM STYLES FOR THE SECTION */
 #style-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: auto;
-  background-color: blue;
-  height: 100vh;
   gap: 10px;
-  padding: 10px;
+  padding: 10px 120px;
   margin-top: 60px;
 }
+
 .style-items {
-  background-color: red;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -46,12 +60,14 @@
 }
 
 .small--div {
-  width: 50%;
+  width: 70%;
+  padding: 10px;
 }
 
 footer {
   background-color: black;
   color: white;
+  margin-top: 30px;
 }
 
 footer section {
@@ -61,6 +77,7 @@ footer section {
   grid-template-columns: repeat(5, 1fr);
   padding: 20px;
 }
+
 ul li {
   list-style-type: none;
 }
